@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eCT61V1MfmtV6pQltpN9rIgbsM33SrvtHgoVEc6zW4lJXqQnOfpv2zzVmulxjhOx+Ld1kuSVWINACtsukjbwkw==",
+  "success": true,
+  "projectFilePath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 15\\Chapter15_AllProject\\PictureHandlerWithAsyncAwait\\PictureHandlerWithAsyncAwait.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MaksiM\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\MaksiM\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\MaksiM\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

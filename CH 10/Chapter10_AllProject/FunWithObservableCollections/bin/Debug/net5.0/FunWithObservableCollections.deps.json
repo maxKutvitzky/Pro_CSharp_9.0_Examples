@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FunWithObservableCollections/1.0.0": {
+        "dependencies": {
+          "FunWithGenericCollections": "1.0.0"
+        },
+        "runtime": {
+          "FunWithObservableCollections.dll": {}
+        }
+      },
+      "FunWithGenericCollections/1.0.0": {
+        "runtime": {
+          "FunWithGenericCollections.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FunWithObservableCollections/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FunWithGenericCollections/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

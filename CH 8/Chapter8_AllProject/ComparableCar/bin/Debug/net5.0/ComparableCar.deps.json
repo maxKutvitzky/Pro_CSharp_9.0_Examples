@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ComparableCar/1.0.0": {
+        "runtime": {
+          "ComparableCar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ComparableCar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

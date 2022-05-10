@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\MaksiM\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MaksiM\\.nuget\\packages",
+      "D:\\PROGI\\Visual studio shared components, tools, and SDKs\\NuGetPackages"
+    ]
+  }
+}
