@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomNamespaces", "CustomNamespaces\CustomNamespaces.csproj", "{909391EF-101A-4559-8303-7363FA653E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomNamespaces", "CustomNamespaces\CustomNamespaces.csproj", "{909391EF-101A-4559-8303-7363FA653E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithConfiguration", "FunWithConfiguration\FunWithConfiguration.csproj", "{99B170D6-9FD6-42F0-9862-BCDFBA615348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLibrary", "CarLibrary\CarLibrary.csproj", "{F3EC4FC9-0981-416E-9470-4FF7FEC08620}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{909391EF-101A-4559-8303-7363FA653E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{909391EF-101A-4559-8303-7363FA653E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{909391EF-101A-4559-8303-7363FA653E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B170D6-9FD6-42F0-9862-BCDFBA615348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B170D6-9FD6-42F0-9862-BCDFBA615348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B170D6-9FD6-42F0-9862-BCDFBA615348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B170D6-9FD6-42F0-9862-BCDFBA615348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EC4FC9-0981-416E-9470-4FF7FEC08620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EC4FC9-0981-416E-9470-4FF7FEC08620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EC4FC9-0981-416E-9470-4FF7FEC08620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EC4FC9-0981-416E-9470-4FF7FEC08620}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
