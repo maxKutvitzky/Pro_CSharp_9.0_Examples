@@ -1,0 +1,3 @@
+D:\UNIVER\#\Pro C# 9.0\CH 16\Chapter16_AllProject\CarLibrary\bin\Debug\net5.0\publish\CarLibrary.dll
+D:\UNIVER\#\Pro C# 9.0\CH 16\Chapter16_AllProject\CarLibrary\bin\Debug\net5.0\publish\CarLibrary.deps.json
+D:\UNIVER\#\Pro C# 9.0\CH 16\Chapter16_AllProject\CarLibrary\bin\Debug\net5.0\publish\CarLibrary.pdb
