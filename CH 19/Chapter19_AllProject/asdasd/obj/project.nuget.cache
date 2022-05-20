@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hzPZLon/3JlrL9tYlQFM1ZTlTpsAxCQdX4NcIBng+naejmy0PO2HfeBf7+5+nmx7+A3p++tqJ9P1wZQOGqX2Lw==",
+  "success": true,
+  "projectFilePath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 19\\Chapter19_AllProject\\asdasd\\RoundTrip.ilproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MaksiM\\.nuget\\packages\\runtime.win-x64.microsoft.netcore.ilasm\\5.0.0\\runtime.win-x64.microsoft.netcore.ilasm.5.0.0.nupkg.sha512",
+    "C:\\Users\\MaksiM\\.nuget\\packages\\runtime.win-x64.microsoft.netcore.ildasm\\5.0.0\\runtime.win-x64.microsoft.netcore.ildasm.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

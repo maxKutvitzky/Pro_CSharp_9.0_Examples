@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QL8MUWOIoXCZrjtmw0QW9IVeknqHI6HGY4emhS1OaIVKW5Y7BwCaZljWf+eRRnX/eYg5BIp/02QB2947db1k5Q==",
+  "success": true,
+  "projectFilePath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 19\\Chapter19_AllProject\\EmptyTypes\\CILTypes.ilproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MaksiM\\.nuget\\packages\\runtime.win-x64.microsoft.netcore.ilasm\\5.0.0\\runtime.win-x64.microsoft.netcore.ilasm.5.0.0.nupkg.sha512",
+    "C:\\Users\\MaksiM\\.nuget\\packages\\runtime.win-x64.microsoft.netcore.ildasm\\5.0.0\\runtime.win-x64.microsoft.netcore.ildasm.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

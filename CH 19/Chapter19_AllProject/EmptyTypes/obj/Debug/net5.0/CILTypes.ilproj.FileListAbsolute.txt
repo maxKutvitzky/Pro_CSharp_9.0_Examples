@@ -1,0 +1,5 @@
+D:\UNIVER\#\Pro C# 9.0\CH 19\Chapter19_AllProject\EmptyTypes\bin\Debug\net5.0\CILTypes.deps.json
+D:\UNIVER\#\Pro C# 9.0\CH 19\Chapter19_AllProject\EmptyTypes\bin\Debug\net5.0\CILTypes.dll
+D:\UNIVER\#\Pro C# 9.0\CH 19\Chapter19_AllProject\EmptyTypes\obj\Debug\net5.0\CILTypes.ilproj.AssemblyReference.cache
+D:\UNIVER\#\Pro C# 9.0\CH 19\Chapter19_AllProject\EmptyTypes\obj\Debug\net5.0\CILTypes.ilproj.CoreCompileInputs.cache
+D:\UNIVER\#\Pro C# 9.0\CH 19\Chapter19_AllProject\EmptyTypes\obj\Debug\net5.0\CILTypes.dll

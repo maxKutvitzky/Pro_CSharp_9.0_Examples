@@ -1,0 +1,134 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "runtime.win-x64.Microsoft.NETCore.ILAsm/5.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x64/native/_._": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.ILDAsm/5.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x64/native/_._": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "runtime.win-x64.Microsoft.NETCore.ILAsm/5.0.0": {
+      "sha512": "008JDT/UBXKRMAGnU2vdjMDW3Hk+yxdid4PABbmzGCFHh+K/MvdE+0TXFOMmGitPbnQL8jZ6qtrnbuMzh8rbVQ==",
+      "type": "package",
+      "path": "runtime.win-x64.microsoft.netcore.ilasm/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "runtime.win-x64.microsoft.netcore.ilasm.5.0.0.nupkg.sha512",
+        "runtime.win-x64.microsoft.netcore.ilasm.nuspec",
+        "runtimes/win-x64/native/ilasm.exe",
+        "version.txt"
+      ]
+    },
+    "runtime.win-x64.Microsoft.NETCore.ILDAsm/5.0.0": {
+      "sha512": "U/lAJ07n8eEWqtDOdKF2oR4KbDLreQ8Qtr8xrTBLaBs4plODSW0ZmvKw6k4uHeltuQ0ak7meen5wjQMorV+zgw==",
+      "type": "package",
+      "path": "runtime.win-x64.microsoft.netcore.ildasm/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "runtime.win-x64.microsoft.netcore.ildasm.5.0.0.nupkg.sha512",
+        "runtime.win-x64.microsoft.netcore.ildasm.nuspec",
+        "runtimes/win-x64/native/ildasm.exe",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "runtime.win-x64.microsoft.netcore.ilasm >= 5.0.0",
+      "runtime.win-x64.microsoft.netcore.ildasm >= 5.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MaksiM\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 19\\Chapter19_AllProject\\asdasd\\RoundTrip.ilproj",
+      "projectName": "RoundTrip",
+      "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 19\\Chapter19_AllProject\\asdasd\\RoundTrip.ilproj",
+      "packagesPath": "C:\\Users\\MaksiM\\.nuget\\packages\\",
+      "outputPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 19\\Chapter19_AllProject\\asdasd\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\MaksiM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "runtime.win-x64.microsoft.netcore.ilasm": {
+            "include": "Runtime, Compile, Build, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.0.0, )",
+            "autoReferenced": true
+          },
+          "runtime.win-x64.microsoft.netcore.ildasm": {
+            "include": "Runtime, Compile, Build, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.0.0, )",
+            "autoReferenced": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
