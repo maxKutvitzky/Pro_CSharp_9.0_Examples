@@ -1,0 +1,15 @@
+{
+  "CanFly": true,
+  "CanSubmerge": false,
+  "TheRadio": {
+    "HasTweeters": true,
+    "HasSubWoofers": false,
+    "StationPresets": [
+      89.3,
+      105.1,
+      97.1
+    ],
+    "RadioId": "XF-552RR6"
+  },
+  "IsHatchBack": false
+}
