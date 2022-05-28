@@ -53,6 +53,11 @@ SaveAsJsonFormat1(options, jbc, "CarData1.json");
 Console.WriteLine("=> Saved car in JSON format!");
 SaveAsJsonFormat1(options, p, "PersonData1.json");
 Console.WriteLine("=> Saved person in JSON format!");
+SaveListOfCarsAsJson(options, "CarCollection.json");
+JamesBondCar savedJsonCar = ReadAsJsonFormat<JamesBondCar>(options, "CarData1.json");
+Console.WriteLine("Read Car: {0}", savedJsonCar.ToString());
+List<JamesBondCar> savedJsonCars = ReadAsJsonFormat<List<JamesBondCar>>(options,"CarCollection.json");
+Console.WriteLine("Read Car: {0}", savedJsonCar.ToString());
 
 static void SaveAsXmlFormat<T>(T objGraph, string fileName)
 {
@@ -107,3 +112,19 @@ static void SaveAsJsonFormat<T>(T objGraph, string fileName)
     };
     File.WriteAllText(fileName, System.Text.Json.JsonSerializer.Serialize(objGraph, options));
 }
+
+static void SaveListOfCarsAsJson(JsonSerializerOptions options, string fileName)
+{
+    //Now persist a List<T> of JamesBondCars.
+    List<JamesBondCar> myCars = new()
+    {
+        new JamesBondCar { CanFly = true, CanSubmerge = true },
+        new JamesBondCar { CanFly = true, CanSubmerge = false },
+        new JamesBondCar { CanFly = false, CanSubmerge = true },
+        new JamesBondCar { CanFly = false, CanSubmerge = false },
+    };
+    File.WriteAllText(fileName, System.Text.Json.JsonSerializer.Serialize(myCars, options));
+    Console.WriteLine("=> Saved list of cars!");
+}
+static T ReadAsJsonFormat<T>(JsonSerializerOptions options, string fileName) =>
+ System.Text.Json.JsonSerializer.Deserialize<T>(File.ReadAllText(fileName), options);
