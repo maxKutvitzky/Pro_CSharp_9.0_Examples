@@ -1,0 +1,7 @@
+{
+  "connection": "Server=DESKTOP-H7TV7FI;DataBase=AutoLot;TrustServerCertificate=True;Trusted_Connection=true",
+  
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=DESKTOP-H7TV7FI;DataBase=AutoLot;TrustServerCertificate=True;Trusted_Connection=true"
+  }
+}
