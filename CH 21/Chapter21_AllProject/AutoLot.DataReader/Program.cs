@@ -19,7 +19,7 @@ using (SqlConnection connection = new SqlConnection())
     string sql =
     @"Select i.id, m.Name as Make, i.Color, i.Petname
     FROM Inventory i
-    INNER JOIN Makes m on m.Id = i.MakeId";
+    INNER JOIN Makes m on m.Id = i.MakeId;";
     SqlCommand myCommand = new SqlCommand(sql, connection);
     // Obtain a data reader a la ExecuteReader().
     using (SqlDataReader myDataReader = myCommand.ExecuteReader())
@@ -29,6 +29,41 @@ using (SqlConnection connection = new SqlConnection())
         {
             Console.WriteLine($"-> Make: {myDataReader["Make"]}, PetName: {myDataReader["PetName"]}, Color: {myDataReader["Color"]}.");
         }
+       
+    }
+    using(SqlDataReader myDataReader = myCommand.ExecuteReader())
+    {
+        // Loop whith int idx
+        while (myDataReader.Read())
+        {
+            for (int i = 0; i < myDataReader.FieldCount; i++)
+            {
+                Console.Write(i != myDataReader.FieldCount - 1
+                ? $"{myDataReader.GetName(i)} = {myDataReader.GetValue(i)}, "
+                : $"{myDataReader.GetName(i)} = {myDataReader.GetValue(i)} ");
+            }
+            Console.WriteLine();
+        }
+    }
+    sql += "Select * from Customers;";
+    myCommand.CommandText = sql;
+    using (SqlDataReader myDataReader = myCommand.ExecuteReader())
+    {
+        do
+        {
+            Console.WriteLine("Multiple queries");
+            while (myDataReader.Read())
+            {
+                for (int i = 0; i < myDataReader.FieldCount; i++)
+                {
+                    Console.Write(i != myDataReader.FieldCount - 1
+                    ? $"{myDataReader.GetName(i)} = {myDataReader.GetValue(i)}, "
+                    : $"{myDataReader.GetName(i)} = {myDataReader.GetValue(i)} ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        } while (myDataReader.NextResult());
     }
     ShowConnectionStatus(connection);
 }

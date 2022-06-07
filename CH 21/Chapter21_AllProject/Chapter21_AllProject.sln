@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLot.DataReader", "AutoL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{48E87EB4-0483-4894-BBF8-8957763C2C34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLot.Dal", "AutoLot.Dal\AutoLot.Dal.csproj", "{99F480EA-984B-4924-ACD9-F00DC649CE0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{48E87EB4-0483-4894-BBF8-8957763C2C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48E87EB4-0483-4894-BBF8-8957763C2C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48E87EB4-0483-4894-BBF8-8957763C2C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F480EA-984B-4924-ACD9-F00DC649CE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F480EA-984B-4924-ACD9-F00DC649CE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F480EA-984B-4924-ACD9-F00DC649CE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F480EA-984B-4924-ACD9-F00DC649CE0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
