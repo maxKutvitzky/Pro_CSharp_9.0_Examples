@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+using AutoLot.Models.Entities.Base;
+using Microsoft.EntityFrameworkCore;
 
-#nullable disable
 
 namespace AutoLot.Models.Entities
 {
-    public partial class Make
+    [Table("Makes", Schema = "dbo")]
+    public partial class Make : BaseEntity
     {
-        public Make()
-        {
-            Inventories = new HashSet<Inventory>();
-        }
-
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public byte[] TimeStamp { get; set; }
-
-        public virtual ICollection<Inventory> Inventories { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string Name { get; set; } = "Ford";
+        [JsonIgnore]
+        [InverseProperty(nameof(Car.MakeNavigation))]
+        public IEnumerable<Car> Cars { get; set; } = new List<Car>();
     }
 }
