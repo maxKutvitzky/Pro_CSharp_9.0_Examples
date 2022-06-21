@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/dmUOrdT0UB1kwTPZii/bVcbn/L9QhmHkigiKUfYqtlhDa6eworLjwcAZ9N1zIs1QubzJEjBFh8CH1nswz5sBA==",
+  "success": true,
+  "projectFilePath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MaksiM\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",
+    "C:\\Users\\MaksiM\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

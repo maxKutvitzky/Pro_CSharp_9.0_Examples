@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLot.Models", "AutoLot.Models\AutoLot.Models.csproj", "{DBDB70A6-DE86-4D05-9790-A25BB409E127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLot.Dal", "AutoLot.Dal\AutoLot.Dal.csproj", "{FFA45033-33FC-46F6-B066-70B4571A7678}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBDB70A6-DE86-4D05-9790-A25BB409E127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDB70A6-DE86-4D05-9790-A25BB409E127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDB70A6-DE86-4D05-9790-A25BB409E127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDB70A6-DE86-4D05-9790-A25BB409E127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA45033-33FC-46F6-B066-70B4571A7678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA45033-33FC-46F6-B066-70B4571A7678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA45033-33FC-46F6-B066-70B4571A7678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA45033-33FC-46F6-B066-70B4571A7678}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
