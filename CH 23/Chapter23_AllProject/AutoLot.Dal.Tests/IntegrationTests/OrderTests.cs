@@ -18,5 +18,36 @@ namespace AutoLot.Dal.Tests.IntegrationTests
         {
             _repo.Dispose();
         }
+        [Fact]
+        public void ShouldGetAllViewModels()
+        {
+            var qs = Context.Orders.IgnoreQueryFilters().ToQueryString();
+            var orders = Context.Orders.IgnoreQueryFilters().ToList();
+            Assert.NotEmpty(orders);
+            Assert.Equal(5, orders.Count);
+        }
+        [Fact]
+        public void ShouldGetAllOrdersExceptFiltered()
+        {
+            var query = Context.Orders.AsQueryable();
+            var qs = query.ToQueryString();
+            var orders = query.ToList();
+            Assert.NotEmpty(orders);
+            Assert.Equal(4, orders.Count);
+        }
+        [Theory]
+        [InlineData("Black", 2)]
+        [InlineData("Rust", 1)]
+        [InlineData("Yellow", 1)]
+        [InlineData("Green", 0)]
+        [InlineData("Pink", 1)]
+        [InlineData("Brown", 0)]
+        public void ShouldGetAllViewModelsByColor(string color, int expectedCount)
+        {
+            var query = _repo.GetOrdersViewModel().Where(x => x.Color == color);
+            var qs = query.ToQueryString();
+            var orders = query.ToList();
+            Assert.Equal(expectedCount, orders.Count);
+        }
     }
 }
