@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+	  <!-- A button with custom content -->
+    <Button Height="100" Width="100">
+      <Ellipse Fill="Green" Height="50" Width="50"/>
+    </Button>
+	</Grid>
+</Page>
