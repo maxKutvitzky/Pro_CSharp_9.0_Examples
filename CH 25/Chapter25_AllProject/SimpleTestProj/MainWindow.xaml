@@ -1,0 +1,17 @@
+﻿<Window x:Class="SimpleTestProj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleTestProj"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnMyButton" Click="btnMyButton_Click" Margin="246,140,334,140">
+            <StackPanel Height="95" Width="128" Orientation="Vertical">
+                <Ellipse Fill="Red" Width="52" Height="45" Margin="5"/>
+                <Label Width="59" FontSize="20" Content="Click!" Height="36" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

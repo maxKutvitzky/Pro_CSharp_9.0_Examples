@@ -1,0 +1,17 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid Background ="LightSteelBlue">
+    <!-- Define columns -->
+    <Grid.ColumnDefinitions>
+    <ColumnDefinition Width ="Auto"/>
+    <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <!-- Add this label to cell 0 -->
+    <Label x:Name="lblLeft" Background ="GreenYellow"
+    Grid.Column="0" Content ="Left!"/>
+    <!-- Define the splitter -->
+    <GridSplitter Grid.Column ="0" Width ="5"/>
+    <!-- Add this label to cell 1 -->
+    <Label x:Name="lblRight" Grid.Column ="1" Content ="Right!"/>
+  </Grid>
+</Window>
