@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WpfControlsAndAPIs/1.0.0": {
+        "runtime": {
+          "WpfControlsAndAPIs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WpfControlsAndAPIs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
