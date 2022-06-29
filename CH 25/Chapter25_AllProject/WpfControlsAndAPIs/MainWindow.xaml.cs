@@ -14,6 +14,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AutoLot.Dal.EfStructures;
+using AutoLot.Dal.Repos;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace WpfControlsAndAPIs
 {
@@ -22,15 +26,45 @@ namespace WpfControlsAndAPIs
     /// </summary>
     public partial class MainWindow : Window
     {
+        private IConfiguration _configuration;
+        private ApplicationDbContext _context;
         public MainWindow()
         {
             InitializeComponent();
+            GetConfigurationAndDbContext();
+            ConfigureGrid();
             // Be in Ink mode by default.
             this.MyInkCanvas.EditingMode = InkCanvasEditingMode.Ink;
             this.inkRadio.IsChecked = true;
             this.comboColors.SelectedIndex = 0;
         }
-
+        private void ConfigureGrid()
+        {
+            using var repo = new CarRepo(_context);
+            gridInventory.ItemsSource = repo
+            .GetAllIgnoreQueryFilters()
+            .ToList()
+            .Select(x => new {
+                x.Id,
+                Make = x.MakeName,
+                x.Color,
+                x.PetName
+            });
+        }
+        private void GetConfigurationAndDbContext()
+        {
+            _configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", true, true)
+            .Build();
+            var optionsBuilder =
+            new DbContextOptionsBuilder<ApplicationDbContext>();
+            var connectionString =
+            _configuration.GetConnectionString("AutoLotFinal");
+            optionsBuilder.UseSqlServer(connectionString,
+            sqlOptions => sqlOptions.EnableRetryOnFailure());
+            _context = new ApplicationDbContext(optionsBuilder.Options);
+        }
         private void RadioButtonClicked(object sender, RoutedEventArgs e)
         {
             this.MyInkCanvas.EditingMode = (sender as RadioButton)?.Content.ToString() switch

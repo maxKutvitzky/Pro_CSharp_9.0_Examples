@@ -4,6 +4,152 @@
     "D:\\UNIVER\\#\\Pro C# 9.0\\CH 25\\Chapter25_AllProject\\WpfControlsAndAPIs\\WpfControlsAndAPIs.csproj": {}
   },
   "projects": {
+    "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Dal\\AutoLot.Dal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Dal\\AutoLot.Dal.csproj",
+        "projectName": "AutoLot.Dal",
+        "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Dal\\AutoLot.Dal.csproj",
+        "packagesPath": "C:\\Users\\MaksiM\\.nuget\\packages\\",
+        "outputPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Dal\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MaksiM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj": {
+                "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj",
+        "projectName": "AutoLot.Models",
+        "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj",
+        "packagesPath": "C:\\Users\\MaksiM\\.nuget\\packages\\",
+        "outputPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MaksiM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\UNIVER\\#\\Pro C# 9.0\\CH 25\\Chapter25_AllProject\\WpfControlsAndAPIs\\WpfControlsAndAPIs.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +177,14 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Dal\\AutoLot.Dal.csproj": {
+                "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Dal\\AutoLot.Dal.csproj"
+              },
+              "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj": {
+                "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -43,6 +196,24 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

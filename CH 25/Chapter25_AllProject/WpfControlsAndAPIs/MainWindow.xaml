@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:WpfControlsAndAPIs"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="800">
+    <Window.Resources>
+        <local:MyDoubleConverter x:Key="DoubleConverter"/>
+    </Window.Resources>
     <Grid>
         <TabControl Name="MyTabControl" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <TabItem Header="Ink API">
@@ -48,11 +51,21 @@
                     <InkCanvas x:Name="MyInkCanvas" Background="#FFB6F4F1" />
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Data Binding">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem x:Name="tabDataBinding" Header="Data Binding">
+                <StackPanel Width="250"  DataContext = "{Binding ElementName=mySB}">
+                    <Label Content="Move the scroll bar to see the current value"/>
+                    <!-- The scrollbar's value is the source of this data bind. -->
+                    <ScrollBar x:Name="mySB" Orientation="Horizontal" Height="30" Minimum = "1" Maximum = "100" LargeChange="1" SmallChange="1"/>
+                    <!-- The label's content will be bound to the scroll bar! -->
+                                                                                                                                            <!-- ContentStringFormat="{}{0:F0}" -->
+                    <Label x:Name="labelSBThumb" Height="30" BorderBrush="Blue" BorderThickness="2" Content = "{Binding Path=Value, Converter={StaticResource DoubleConverter}}" />
+                    <Button Content="Click" Height="200" FontSize = "{Binding Path=Value}"/>
+                </StackPanel>
             </TabItem>
-            <TabItem HorizontalAlignment="Center" Height="20" Header="DataGrid" VerticalAlignment="Center" Width="54">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem x:Name="tabDataGrid" Header="DataGrid">
+                <StackPanel>
+                    <DataGrid x:Name="gridInventory" Height="288"/>
+                </StackPanel>
             </TabItem>
         </TabControl>
 
