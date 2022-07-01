@@ -8,6 +8,7 @@
         Title="Fun with Shapes!" Height="450" Width="800">
     <DockPanel LastChildFill="True">
         <ToolBar DockPanel.Dock="Top" Name="mainToolBar" Height="50">
+            <ToggleButton Name="flipCanvas" Click="FlipCanvas_Click" Content="Flip Canvas!"/>
             <RadioButton Name="circleOption" GroupName="shapeSelection" Click="CircleOption_Click">
                 <Ellipse Height="35" Width="35" >
                     <Ellipse.Fill>
@@ -26,6 +27,6 @@
                 StrokeStartLineCap="Triangle" StrokeEndLineCap="Round" />
             </RadioButton>
         </ToolBar>
-        <Canvas Background="LightBlue" Name="canvasDrawingArea" MouseLeftButtonDown="CanvasDrawingArea_MouseLeftButtonDown" MouseRightButtonDown="CanvasDrawingArea_MouseRightButtonDown"/>
+        <Canvas ClipToBounds = "True" Background="LightBlue" Name="canvasDrawingArea" MouseLeftButtonDown="CanvasDrawingArea_MouseLeftButtonDown" MouseRightButtonDown="CanvasDrawingArea_MouseRightButtonDown"/>
     </DockPanel>
 </Window>

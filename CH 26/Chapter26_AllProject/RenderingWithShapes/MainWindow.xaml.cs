@@ -75,11 +75,24 @@ namespace RenderingWithShapes
                 default:
                     return;
             }
-            // Set top/left position to draw in the canvas.
+            //omitted for brevity
+            if (flipCanvas.IsChecked == true)
+            {
+                RotateTransform rotate = new RotateTransform(-180);
+                shapeToRender.RenderTransform = rotate;
+            }
+            // Set top/left to draw in the canvas.
             Canvas.SetLeft(shapeToRender, e.GetPosition(canvasDrawingArea).X);
             Canvas.SetTop(shapeToRender, e.GetPosition(canvasDrawingArea).Y);
             // Draw shape!
             canvasDrawingArea.Children.Add(shapeToRender);
+
+            /*
+            // Set top/left position to draw in the canvas.
+            Canvas.SetLeft(shapeToRender, e.GetPosition(canvasDrawingArea).X);
+            Canvas.SetTop(shapeToRender, e.GetPosition(canvasDrawingArea).Y);
+            // Draw shape!
+            canvasDrawingArea.Children.Add(shapeToRender);*/
         }
         private void CanvasDrawingArea_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -94,6 +107,18 @@ namespace RenderingWithShapes
                 // Get the underlying shape clicked on, and remove it from
                 // the canvas.
                 canvasDrawingArea.Children.Remove(result.VisualHit as Shape);
+            }
+        }
+        private void FlipCanvas_Click(object sender, RoutedEventArgs e)
+        {
+            if (flipCanvas.IsChecked == true)
+            {
+                RotateTransform rotate = new RotateTransform(-180);
+                canvasDrawingArea.LayoutTransform = rotate;
+            }
+            else
+            {
+                canvasDrawingArea.LayoutTransform = null;
             }
         }
     }

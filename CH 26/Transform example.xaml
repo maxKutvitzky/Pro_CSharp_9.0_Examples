@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<StackPanel Orientation="Horizontal">
+    <!-- A Rectangle with a rotate transformation. -->
+    <Rectangle Height ="100" Width ="40" Fill ="Red">
+      <Rectangle.LayoutTransform>
+        <RotateTransform Angle ="45"/>
+      </Rectangle.LayoutTransform>
+    </Rectangle>
+    <!-- A Button with a skew transformation. -->
+    <Button Content ="Click Me!" Width="95" Height="40">
+      <Button.LayoutTransform>
+        <SkewTransform AngleX ="20" AngleY ="20"/>
+      </Button.LayoutTransform>
+    </Button>    <!-- An Ellipse that has been scaled by 20%. -->
+    <Ellipse Fill ="Blue" Width="5" Height="5">
+      <Ellipse.LayoutTransform>
+        <ScaleTransform ScaleX ="20" ScaleY ="20"/>
+      </Ellipse.LayoutTransform>
+    </Ellipse>
+    <!-- A TextBox that has been rotated and skewed. -->
+    <TextBox Text ="Me Too!" Width="50" Height="40">
+      <TextBox.LayoutTransform>
+        <TransformGroup>
+          <RotateTransform Angle ="45"/>
+          <SkewTransform AngleX ="5" AngleY ="20"/>
+        </TransformGroup>
+      </TextBox.LayoutTransform>
+    </TextBox>
+	</StackPanel>
+</Page>
