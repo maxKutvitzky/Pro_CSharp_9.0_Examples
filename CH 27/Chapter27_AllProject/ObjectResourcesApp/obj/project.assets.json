@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "MyBrushesLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MyBrushesLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBrushesLibrary.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MyBrushesLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MyBrushesLibrary/MyBrushesLibrary.csproj",
+      "msbuildProject": "../MyBrushesLibrary/MyBrushesLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "MyBrushesLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\MaksiM\\.nuget\\packages\\": {},
@@ -38,7 +60,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\UNIVER\\#\\Pro C# 9.0\\CH 27\\Chapter27_AllProject\\MyBrushesLibrary\\MyBrushesLibrary.csproj": {
+              "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 27\\Chapter27_AllProject\\MyBrushesLibrary\\MyBrushesLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
