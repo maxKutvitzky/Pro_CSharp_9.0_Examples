@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:ButtonTemplate"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel Orientation="Horizontal">
+        <Button x:Name="myButton" Width="100" Height="100"
+                Background="Red" Content="Howdy!" Click="myButton_Click"
+                Style="{StaticResource RoundButtonStyle}" />
+        <Button x:Name="myButton2" Width="100" Height="100"
+                Background="LightGreen" Content="Cancel!" Style="{StaticResource RoundButtonStyle}" />
+        <Button x:Name="myButton3" Width="100" Height="100"
+                Background="Yellow" Content="Format" Style="{StaticResource RoundButtonStyle}" />
+    </StackPanel>
 </Window>

@@ -24,5 +24,10 @@ namespace ButtonTemplate
         {
             InitializeComponent();
         }
+
+        private void myButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Click");
+        }
     }
 }
