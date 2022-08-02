@@ -13,9 +13,9 @@ namespace AutoLot.Dal.EfStructures
 {
     public partial class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext()
+        /*public ApplicationDbContext()
         {
-        }
+        }*/
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

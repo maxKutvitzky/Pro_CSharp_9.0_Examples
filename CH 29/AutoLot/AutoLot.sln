@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLot.Api", "AutoLot.Api\AutoLot.Api.csproj", "{651A569F-22D8-4BA0-8F1B-D874C73D6CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLot.Mvc", "AutoLot.Mvc\AutoLot.Mvc.csproj", "{A2577FEC-19C3-426F-A81B-B1E1E4EF8C17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLot.Models", "..\..\CH 23\Chapter23_AllProject\AutoLot.Models\AutoLot.Models.csproj", "{07F1F693-1C4A-412C-8D4B-35F9D2203084}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLot.Dal", "..\..\CH 23\Chapter23_AllProject\AutoLot.Dal\AutoLot.Dal.csproj", "{EBF3555B-10F1-4E09-882C-779779CC33E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLot.Services", "AutoLot.Services\AutoLot.Services.csproj", "{8B6124F3-2131-4170-9725-E96ADDA8C505}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{651A569F-22D8-4BA0-8F1B-D874C73D6CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651A569F-22D8-4BA0-8F1B-D874C73D6CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651A569F-22D8-4BA0-8F1B-D874C73D6CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651A569F-22D8-4BA0-8F1B-D874C73D6CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2577FEC-19C3-426F-A81B-B1E1E4EF8C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2577FEC-19C3-426F-A81B-B1E1E4EF8C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2577FEC-19C3-426F-A81B-B1E1E4EF8C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2577FEC-19C3-426F-A81B-B1E1E4EF8C17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F1F693-1C4A-412C-8D4B-35F9D2203084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F1F693-1C4A-412C-8D4B-35F9D2203084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F1F693-1C4A-412C-8D4B-35F9D2203084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F1F693-1C4A-412C-8D4B-35F9D2203084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF3555B-10F1-4E09-882C-779779CC33E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF3555B-10F1-4E09-882C-779779CC33E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF3555B-10F1-4E09-882C-779779CC33E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF3555B-10F1-4E09-882C-779779CC33E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B6124F3-2131-4170-9725-E96ADDA8C505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6124F3-2131-4170-9725-E96ADDA8C505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6124F3-2131-4170-9725-E96ADDA8C505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6124F3-2131-4170-9725-E96ADDA8C505}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AFE4C74-ECA9-442C-8717-7F8EF37C0D07}
+	EndGlobalSection
+EndGlobal
