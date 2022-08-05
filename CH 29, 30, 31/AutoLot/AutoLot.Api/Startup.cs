@@ -1,3 +1,4 @@
+using System;
 using AutoLot.Dal.EfStructures;
 using AutoLot.Dal.Initialization;
 using AutoLot.Dal.Repos;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using AutoLot.Api.Filters;
 
 namespace AutoLot.Api
 {
@@ -29,7 +31,8 @@ namespace AutoLot.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers()
+            services
+                .AddControllers(config => config.Filters.Add(new CustomExceptionFilterAttribute(_env)))
                 .AddJsonOptions(options =>
                 {
                     options.JsonSerializerOptions.PropertyNamingPolicy = null;
@@ -37,7 +40,18 @@ namespace AutoLot.Api
                 });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "AutoLot.Api", Version = "v1" });
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "AutoLot Service",
+                        Version = "v1",
+                        Description = "Service to support the AutoLot dealer site",
+                        License = new OpenApiLicense
+                        {
+                            Name = "Skimedic Inc",
+                            Url = new Uri("http://www.skimedic.com")
+                        }
+                    });
             });
             var connectionString = Configuration.GetConnectionString("AutoLot");
             services.AddDbContextPool<ApplicationDbContext>(
@@ -49,6 +63,16 @@ namespace AutoLot.Api
             services.AddScoped<IMakeRepo, MakeRepo>();
             services.AddScoped<IOrderRepo, OrderRepo>();
             services.AddScoped(typeof(IAppLogging<>), typeof(AppLogging<>));
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowAnyOrigin();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,11 +88,18 @@ namespace AutoLot.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AutoLot.Api v1"));
             }
-
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "AutoLot Service v1"); });
             //redirect http traffic to https
             app.UseHttpsRedirection();
             //opt-in to routing
             app.UseRouting();
+            //Add CORS Policy
+            app.UseCors("AllowAll");
             //enable authorization checks
             app.UseAuthorization();
             //opt-in to using endpoint routing

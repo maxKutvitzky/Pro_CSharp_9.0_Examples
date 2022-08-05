@@ -27,6 +27,7 @@ namespace AutoLot.Api.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             _logger.LogAppWarning("This is a test");
+            //throw new Exception("Test Exception");
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

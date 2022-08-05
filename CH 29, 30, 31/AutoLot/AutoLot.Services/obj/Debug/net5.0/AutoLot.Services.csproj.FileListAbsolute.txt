@@ -15,3 +15,20 @@ D:\UNIVER\#\Pro C# 9.0\CH 29\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.S
 D:\UNIVER\#\Pro C# 9.0\CH 29\AutoLot\AutoLot.Services\obj\Debug\net5.0\refint\AutoLot.Services.dll
 D:\UNIVER\#\Pro C# 9.0\CH 29\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.pdb
 D:\UNIVER\#\Pro C# 9.0\CH 29\AutoLot\AutoLot.Services\obj\Debug\net5.0\ref\AutoLot.Services.dll
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\bin\Debug\net5.0\AutoLot.Services.deps.json
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\bin\Debug\net5.0\AutoLot.Services.dll
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\bin\Debug\net5.0\AutoLot.Services.pdb
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\bin\Debug\net5.0\AutoLot.Dal.dll
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\bin\Debug\net5.0\AutoLot.Models.dll
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\bin\Debug\net5.0\AutoLot.Dal.pdb
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\bin\Debug\net5.0\AutoLot.Models.pdb
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.csproj.AssemblyReference.cache
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.AssemblyInfoInputs.cache
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.AssemblyInfo.cs
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.csproj.CoreCompileInputs.cache
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.csproj.CopyComplete
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.dll
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\refint\AutoLot.Services.dll
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\AutoLot.Services.pdb
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Services\obj\Debug\net5.0\ref\AutoLot.Services.dll

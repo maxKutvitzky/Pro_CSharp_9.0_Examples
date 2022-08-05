@@ -9918,11 +9918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29\\AutoLot\\AutoLot.Mvc\\AutoLot.Mvc.csproj",
+      "projectUniqueName": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29, 30, 31\\AutoLot\\AutoLot.Mvc\\AutoLot.Mvc.csproj",
       "projectName": "AutoLot.Mvc",
-      "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29\\AutoLot\\AutoLot.Mvc\\AutoLot.Mvc.csproj",
+      "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29, 30, 31\\AutoLot\\AutoLot.Mvc\\AutoLot.Mvc.csproj",
       "packagesPath": "C:\\Users\\MaksiM\\.nuget\\packages\\",
-      "outputPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29\\AutoLot\\AutoLot.Mvc\\obj\\",
+      "outputPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29, 30, 31\\AutoLot\\AutoLot.Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9949,8 +9949,8 @@
             "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj": {
               "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 23\\Chapter23_AllProject\\AutoLot.Models\\AutoLot.Models.csproj"
             },
-            "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29\\AutoLot\\AutoLot.Services\\AutoLot.Services.csproj": {
-              "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29\\AutoLot\\AutoLot.Services\\AutoLot.Services.csproj"
+            "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29, 30, 31\\AutoLot\\AutoLot.Services\\AutoLot.Services.csproj": {
+              "projectPath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29, 30, 31\\AutoLot\\AutoLot.Services\\AutoLot.Services.csproj"
             }
           }
         }

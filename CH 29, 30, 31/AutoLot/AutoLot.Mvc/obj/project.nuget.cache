@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jCWJ2dGM2ucoCMmfrHzeeq6Uswy1MzP+XX2VhhAJ/iKFpiXWu5YXo8Mgsy/KbZeMpChLZBzV4rii43ztCjGcqQ==",
+  "dgSpecHash": "AXeIAaMJY9On7IDgrm2h6FRTmxbfoxhVjipH51BIok4YdckjSpB9LUsvS5J7SfjAMwxC9QVkMO9WT/3Oh8RaFw==",
   "success": true,
-  "projectFilePath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29\\AutoLot\\AutoLot.Mvc\\AutoLot.Mvc.csproj",
+  "projectFilePath": "D:\\UNIVER\\#\\Pro C# 9.0\\CH 29, 30, 31\\AutoLot\\AutoLot.Mvc\\AutoLot.Mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MaksiM\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\MaksiM\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
