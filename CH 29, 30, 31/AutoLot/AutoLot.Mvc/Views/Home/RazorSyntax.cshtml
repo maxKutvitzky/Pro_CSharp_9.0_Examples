@@ -1,0 +1,74 @@
+﻿@model AutoLot.Models.Entities.Car
+<h1>Razor Syntax</h1>
+@{
+    ViewData["Title"] = "RazorSyntax";
+}
+@for (var i = 0; i < 15; i++)
+{
+    //do something
+}
+@{
+    //Code Block
+    var foo = "Foo";
+    var bar = "Bar";
+    var htmlString = "<ul><li>one</li><li>two</li></ul>";
+}
+
+@foo
+<br />
+@htmlString
+<br />
+@foo.@bar
+<br />
+@Html.Raw(htmlString)
+<hr />
+
+@{
+    @:Straight Text
+    <div>Value:@Model.Id</div>
+    <text>
+        Lines without HTML tag
+    </text>
+    <br />
+}
+
+foo@foo.com
+<br />
+@@foo
+<br />
+test@foo
+<br/>
+test@(foo)
+<br />
+
+@*
+ Multiline Comments
+ Hi.
+*@
+
+@functions {
+    public static IList<string> SortList(IList<string> strings) {
+        var list = from s in strings orderby s select s;
+        return list.ToList();
+    }
+}
+
+@{
+    var myList = new List<string> {"C", "A", "Z", "F"};
+    var sortedList = SortList(myList);
+}
+<hr/>
+@foreach (string s in sortedList)
+{
+    @s@:&nbsp;
+}
+<hr/>
+
+@{
+    Func<dynamic, object> b = @<strong>@item</strong>;
+}
+This will be bold: @b("Foo")
+<hr/>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RazorSyntax">
+    Razor Syntax
+</a>

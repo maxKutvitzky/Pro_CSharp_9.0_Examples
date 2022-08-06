@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoLot.Services.Logging;
+using AutoLot.Dal.Repos.Interfaces;
 
 
 namespace AutoLot.Mvc.Controllers
@@ -40,6 +41,12 @@ namespace AutoLot.Mvc.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        [HttpGet]
+        public IActionResult RazorSyntax([FromServices] ICarRepo carRepo)
+        {
+            var car = carRepo.Find(1);
+            return View(car);
         }
     }
 }

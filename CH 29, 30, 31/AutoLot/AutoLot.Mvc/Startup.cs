@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace AutoLot.Mvc
 {
@@ -39,6 +41,7 @@ namespace AutoLot.Mvc
             services.AddScoped<IMakeRepo, MakeRepo>();
             services.AddScoped<IOrderRepo, OrderRepo>();
             services.AddScoped(typeof(IAppLogging<>), typeof(AppLogging<>));
+            services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
