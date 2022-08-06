@@ -34,7 +34,7 @@ using AutoLot.Models.Entities;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e4d2053a5d06fdc831e471f88cefb9417ffdcbee", @"/Views/Cars/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3cdcf4250e50fe4187055d35dad8aa6ffcd4328b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"95e90607989c3d09dc8473fbe3542b50d3602a94", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Cars_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Car>
     #nullable disable

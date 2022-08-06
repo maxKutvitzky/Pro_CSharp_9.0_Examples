@@ -34,7 +34,7 @@ using AutoLot.Models.Entities;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"99f0048d27b4fdbf5a70e800b9bd131eda3279a8", @"/Views/Shared/Partials/_Head.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3cdcf4250e50fe4187055d35dad8aa6ffcd4328b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"95e90607989c3d09dc8473fbe3542b50d3602a94", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Partials__Head : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -75,7 +75,9 @@ using AutoLot.Models.Entities;
         }
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_EnvironmentTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+        private global::WebOptimizer.Taghelpers.LinkTagHelper __WebOptimizer_Taghelpers_LinkTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper;
+        private global::WebOptimizer.TagHelpersDynamic.LinkTagHelper __WebOptimizer_TagHelpersDynamic_LinkTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -88,13 +90,15 @@ using AutoLot.Models.Entities;
 #line hidden
 #nullable disable
             WriteLiteral(" - AutoLot.Mvc</title>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99f0048d27b4fdbf5a70e800b9bd131eda3279a88808", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99f0048d27b4fdbf5a70e800b9bd131eda3279a89030", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a89077", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a89299", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+                __WebOptimizer_Taghelpers_LinkTagHelper = CreateTagHelper<global::WebOptimizer.Taghelpers.LinkTagHelper>();
+                __tagHelperExecutionContext.Add(__WebOptimizer_Taghelpers_LinkTagHelper);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
@@ -120,21 +124,33 @@ using AutoLot.Models.Entities;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99f0048d27b4fdbf5a70e800b9bd131eda3279a811257", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99f0048d27b4fdbf5a70e800b9bd131eda3279a811695", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a811527", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a811965", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper);
+                __WebOptimizer_TagHelpersDynamic_LinkTagHelper = CreateTagHelper<global::WebOptimizer.TagHelpersDynamic.LinkTagHelper>();
+                __tagHelperExecutionContext.Add(__WebOptimizer_TagHelpersDynamic_LinkTagHelper);
+                __WebOptimizer_Taghelpers_LinkTagHelper = CreateTagHelper<global::WebOptimizer.Taghelpers.LinkTagHelper>();
+                __tagHelperExecutionContext.Add(__WebOptimizer_Taghelpers_LinkTagHelper);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.Href = (string)__tagHelperAttribute_4.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
+                __WebOptimizer_TagHelpersDynamic_LinkTagHelper.Href = (string)__tagHelperAttribute_4.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.FallbackHref = (string)__tagHelperAttribute_5.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_5);
+                __WebOptimizer_TagHelpersDynamic_LinkTagHelper.FallbackHref = (string)__tagHelperAttribute_5.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_5);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.FallbackTestClass = (string)__tagHelperAttribute_6.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_6);
+                __WebOptimizer_TagHelpersDynamic_LinkTagHelper.FallbackTestClass = (string)__tagHelperAttribute_6.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_6);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.FallbackTestProperty = (string)__tagHelperAttribute_7.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_7);
+                __WebOptimizer_TagHelpersDynamic_LinkTagHelper.FallbackTestProperty = (string)__tagHelperAttribute_7.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_7);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_8);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_9);
@@ -161,15 +177,21 @@ using AutoLot.Models.Entities;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a814614", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a816346", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
             __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper);
+            __WebOptimizer_TagHelpersDynamic_LinkTagHelper = CreateTagHelper<global::WebOptimizer.TagHelpersDynamic.LinkTagHelper>();
+            __tagHelperExecutionContext.Add(__WebOptimizer_TagHelpersDynamic_LinkTagHelper);
+            __WebOptimizer_Taghelpers_LinkTagHelper = CreateTagHelper<global::WebOptimizer.Taghelpers.LinkTagHelper>();
+            __tagHelperExecutionContext.Add(__WebOptimizer_Taghelpers_LinkTagHelper);
             __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
             __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.Href = (string)__tagHelperAttribute_12.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_12);
+            __WebOptimizer_TagHelpersDynamic_LinkTagHelper.Href = (string)__tagHelperAttribute_12.Value;
             __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_12);
 #nullable restore
 #line 14 "D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\Views\Shared\Partials\_Head.cshtml"
@@ -179,6 +201,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion = true;
 #line hidden
 #nullable disable
             __tagHelperExecutionContext.AddTagHelperAttribute("asp-append-version", __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            __WebOptimizer_TagHelpersDynamic_LinkTagHelper.AppendVersion = __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion;
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {
@@ -187,15 +210,21 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion = true;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a816575", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99f0048d27b4fdbf5a70e800b9bd131eda3279a819082", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
             __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper);
+            __WebOptimizer_TagHelpersDynamic_LinkTagHelper = CreateTagHelper<global::WebOptimizer.TagHelpersDynamic.LinkTagHelper>();
+            __tagHelperExecutionContext.Add(__WebOptimizer_TagHelpersDynamic_LinkTagHelper);
+            __WebOptimizer_Taghelpers_LinkTagHelper = CreateTagHelper<global::WebOptimizer.Taghelpers.LinkTagHelper>();
+            __tagHelperExecutionContext.Add(__WebOptimizer_Taghelpers_LinkTagHelper);
             __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
             __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.Href = (string)__tagHelperAttribute_13.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_13);
+            __WebOptimizer_TagHelpersDynamic_LinkTagHelper.Href = (string)__tagHelperAttribute_13.Value;
             __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_13);
 #nullable restore
 #line 15 "D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\Views\Shared\Partials\_Head.cshtml"
@@ -205,6 +234,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion = true;
 #line hidden
 #nullable disable
             __tagHelperExecutionContext.AddTagHelperAttribute("asp-append-version", __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            __WebOptimizer_TagHelpersDynamic_LinkTagHelper.AppendVersion = __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper.AppendVersion;
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {

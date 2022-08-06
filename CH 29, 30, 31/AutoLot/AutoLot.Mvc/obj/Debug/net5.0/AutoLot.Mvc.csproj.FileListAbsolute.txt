@@ -353,3 +353,4 @@ D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\obj\Debug\net5.0\Razor\
 D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\obj\Debug\net5.0\Razor\Views\Cars\Details.cshtml.g.cs
 D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\obj\Debug\net5.0\Razor\Views\Cars\Edit.cshtml.g.cs
 D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\obj\Debug\net5.0\Razor\Views\Cars\Delete.cshtml.g.cs
+D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\obj\Debug\net5.0\Razor\Views\Shared\Components\Menu\MenuView.cshtml.g.cs

@@ -865,3 +865,51 @@ Error Number:547,State:0,Class:16
 in method  at :
 
             
+[22-08-06 23:31:17 Warning]:Microsoft.EntityFrameworkCore.Model.Validation
+
+            Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+            
+[22-08-06 23:40:39 Warning]:Microsoft.EntityFrameworkCore.Model.Validation
+
+            Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+            
+[22-08-06 23:43:12 Warning]AutoLot.Mvc - Dev:AutoLot.Mvc.Controllers.HomeController
+
+            Message:This is a test
+in method Index at D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\Controllers\HomeController.cs:31
+
+            
+[22-08-06 23:43:14 Warning]AutoLot.Mvc - Dev:AutoLot.Mvc.Controllers.HomeController
+
+            Message:This is a test
+in method Index at D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\Controllers\HomeController.cs:31
+
+            
+[22-08-06 23:43:35 Warning]AutoLot.Mvc - Dev:AutoLot.Mvc.Controllers.HomeController
+
+            Message:This is a test
+in method Index at D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\Controllers\HomeController.cs:31
+
+            
+[22-08-06 23:43:35 Warning]AutoLot.Mvc - Dev:AutoLot.Mvc.Controllers.HomeController
+
+            Message:This is a test
+in method Index at D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\Controllers\HomeController.cs:31
+
+            
+[22-08-06 23:43:43 Warning]AutoLot.Mvc - Dev:AutoLot.Mvc.Controllers.HomeController
+
+            Message:This is a test
+in method Index at D:\UNIVER\#\Pro C# 9.0\CH 29, 30, 31\AutoLot\AutoLot.Mvc\Controllers\HomeController.cs:31
+
+            
+[22-08-06 23:56:21 Warning]:Microsoft.EntityFrameworkCore.Model.Validation
+
+            Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+            

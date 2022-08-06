@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using AutoLot.Mvc.Models;
+using AutoLot.Services.ApiWrapper;
 
 namespace AutoLot.Mvc
 {
@@ -30,6 +32,22 @@ namespace AutoLot.Mvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            if (_env.IsDevelopment() || _env.IsEnvironment("Local"))
+            {
+                services.AddWebOptimizer(false, false);
+            }
+            else
+            {
+                services.AddWebOptimizer(options =>
+                {
+                    options.MinifyCssFiles(); //Minifies all CSS files
+                    //options.MinifyJsFiles(); //Minifies all JS files
+                    options.MinifyJsFiles("js/site.js");
+                    options.MinifyJsFiles("lib/**/*.js");
+                });
+            }
+            services.ConfigureApiServiceWrapper(Configuration);
+            services.Configure<DealerInfo>(Configuration.GetSection(nameof(DealerInfo)));
             services.AddControllersWithViews();
             var connectionString = Configuration.GetConnectionString("AutoLot");
             services.AddDbContextPool<ApplicationDbContext>(
@@ -61,6 +79,8 @@ namespace AutoLot.Mvc
             }
 
             app.UseHttpsRedirection();
+            app.UseWebOptimizer();
+
             app.UseStaticFiles();
 
             app.UseRouting();
